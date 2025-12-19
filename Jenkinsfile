@@ -3,7 +3,7 @@ pipeline {
 
   stages {
 
-    stage('Checkout Code') {
+    stage('Checkout') {
       steps {
         checkout scm
       }
@@ -22,10 +22,10 @@ pipeline {
 
   post {
     success {
-      echo 'Deploy success 🎉'
+      echo 'Auto deploy success 🚀'
     }
     failure {
-      echo 'Deploy failed 💀'
+      echo 'Auto deploy failed 💀'
     }
   }
 }
